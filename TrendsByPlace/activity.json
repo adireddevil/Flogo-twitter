@@ -1,0 +1,50 @@
+{
+  "name": "Twitter Get Trends By Place",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "ref": "github.com/adireddevil/twittertrendsbyplace",
+  "description": "activity description",
+  "author": "AllStars",
+  "inputs":[
+    {
+		"name": "consumerKey",
+		"type": "string",
+    "required": true
+	},
+	{
+		"name": "consumerSecret",
+		"type": "string",
+      "required": true
+
+	},
+	{
+		"name": "accessToken",
+		"type": "string",
+      "required": true
+
+	},
+	{
+		"name": "accessTokenSecret",
+		"type": "boolean",
+      "required": true
+
+	},
+	{
+		"name": "placeId",
+		"type": "int",
+    "required": true
+
+	}
+
+  ],
+  "outputs": [
+    {
+      "name": "statusCode",
+      "type": "string"
+    },
+    {
+      "name": "message",
+      "type": "any"
+    }
+  ]
+}

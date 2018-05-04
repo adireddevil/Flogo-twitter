@@ -1,0 +1,50 @@
+{
+  "name": "Twitter Post Tweet",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "ref": "github.com/adireddevil/twitterretweet",
+  "description": "activity description",
+  "author": "AllStars",
+  "inputs":[
+    {
+		"name": "consumerKey",
+		"type": "string",
+    "required": true
+	},
+	{
+		"name": "consumerSecret",
+		"type": "string",
+      "required": true
+
+	},
+	{
+		"name": "accessToken",
+		"type": "string",
+      "required": true
+
+	},
+	{
+		"name": "accessTokenSecret",
+		"type": "boolean",
+      "required": true
+
+	},
+	{
+		"name": "tweetId",
+		"type": "string",
+    "required": true
+
+	}
+
+  ],
+  "outputs": [
+    {
+      "name": "statusCode",
+      "type": "string"
+    },
+    {
+      "name": "message",
+      "type": "any"
+    }
+  ]
+}
