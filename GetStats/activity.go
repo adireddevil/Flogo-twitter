@@ -1,4 +1,4 @@
-package getstats
+package twittergetstats
 
 import (
 	s "strings"
@@ -13,7 +13,7 @@ type MyActivity struct {
 	metadata *activity.Metadata
 }
 
-var log = logger.GetLogger("activity-getStats")
+var log = logger.GetLogger("activity-twittergetstats")
 
 // NewActivity creates a new activity
 func NewActivity(metadata *activity.Metadata) activity.Activity {

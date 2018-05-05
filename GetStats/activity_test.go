@@ -1,4 +1,4 @@
-package getstats
+package twittergetstats
 
 import (
 	"io/ioutil"
